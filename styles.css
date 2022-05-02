@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Body design */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("images/weather.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: #222;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  font-size: 100%;
+}
+
+/* Card design */
+.card {
+  background-color: #0000008f;
+  width: 100%;
+  max-width: 420px;
+  color: white;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 20px;
+}
+
+/* Input/Button section */
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input design */
+.enter-bar {
+  width: calc(100% - 50px);
+  padding: 12px 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  text-transform: capitalize;
+  background: #0000005c;
+  color: white;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+/* button design */
+button {
+  width: 44px;
+  height: 44px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background: #0000005c;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Adding hover to the button */
+button:hover {
+  background: #0000008c;
+  transition: 0.2s ease-in-out;
+}
+
+/* Weather informations design */
+.temp {
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* Image icon/weather discription */
+.flex {
+  display: flex;
+  align-items: center;
+}
+.description {
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+
+/* Weather loading design */
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+@media screen and (max-width: 700) {
+  body {
+    width: 100%;
+  }
+  .enter-bar {
+    width: 100%;
+  }
+}
