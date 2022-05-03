@@ -5,7 +5,7 @@ let weather = {
 // function that fetches 
   fetchWeather: function (city) {
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`
     )
       .then(res => res.json())
       .then(data => this.displayWeather(data))
