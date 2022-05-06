@@ -94,7 +94,7 @@ button:hover {
 }
 .weather.loading:after {
   visibility: visible;
-  content: "Loading...";
+  content: "Fetching Weather.....";
   color: white;
   position: absolute;
   top: 0;

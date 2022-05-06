@@ -32,11 +32,11 @@ let weather = {
   }
 }
 document.querySelector('.search-bar').addEventListener('click', () => {
-  weather.search()
+  weather.search( document.querySelector('.weather').classList.add('loading'))
 })
 document.querySelector('.enter-bar').addEventListener('keyup', event => {
   if (event.key == 'Enter') {
-    weather.search()
+    weather.search( document.querySelector('.weather').classList.add('loading'))
   }
 })
 weather.fetchWeather('Lagos')
